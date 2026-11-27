@@ -32,6 +32,33 @@
   --info-light: #d1ecf1;
 }
 
+body[data-theme="dark"] {
+  color-scheme: dark;
+  --primary: #9fa8da;
+  --primary-light: #7986cb;
+  --primary-dark: #3949ab;
+  --primary-text: #ffffff;
+  --secondary: #ff9800;
+  --secondary-light: #ffb74d;
+  --secondary-dark: #e65100;
+  --secondary-text: #ffffff;
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b0b0b0;
+  --border: #424242;
+  --border-light: #333333;
+  --border-focus: #666666;
+  --success-light: #1b3320;
+  --warning-light: #3a2e16;
+  --error-light: #3a1c1c;
+  --info-light: #183137;
+}
+
+body[data-theme="dark"] button {
+  color: #121212;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -617,6 +644,20 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#theme-toggle {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #user-status {
